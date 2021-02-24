@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Body is dark green to better see the area */
+body{
+    background-color: rgb(24, 49, 49);
+}
+
+/* Header color turns the top nav background to red */
+header{
+    background-color: brown;
+}
+
+/* This styles the H1 with my name  */
+header h1{
+line-height: 4em;
+font-size: 20px; 
+background-color: bisque;
+display: inline;
+padding-right: 1em;
+padding-top: 15px;
+padding-left: 5px;
+margin: 13px;
+text-align: center;
+}
+/* 
+Moves the h1 in header to left side of the screen and justifys the layout between the anchor tag and h1 */
+header div{
+    display: flex;
+    -ms-flex-align: start;
+    justify-content: space-between
+   
+}
+/* Styles the anchor tags and the background */
+nav, a{
+    padding: 2em;
+    background-color: brown;
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+}
+
+/* Formats the header image */
+header img{
+    height: 600px;
+    width: 100%;
+    
+}
+
+/* This class is centered around a div above the image and is the relative position to add text above the image */
+.box-relative{
+    position: relative;
+}
+
+/* block css is absolute position of the h2 and goal is to position text at the center of the image.  */
+header h2{
+position: absolute;
+top:40%;
+bottom: 50%;
+right:30%;
+left: 30%;
+color: white;
+font-weight: bold;
+font-size: 5em;
+
+}
+
+
+/* Thinking of have words come in and out of the image */
