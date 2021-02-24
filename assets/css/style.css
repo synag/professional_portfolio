@@ -67,4 +67,47 @@ font-size: 5em;
 }
 
 
-/* Thinking of have words come in and out of the image */
+/* Thinking of have words come in and out of the image 
+Add work ART for my Name Use Font Family*/
+
+/* Main creates the container to format the child elements within the contatiner. Margins left and right helps contrain the width of the children elements*/
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* About class is the flext element that allows the child h1 and p to justify center position each element side by side. 
+
+Padding bottom expand the.about-me container*/
+.about-me{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10em;
+
+}
+
+/* H1 has a boarder to the right to seperate the p tag text. Margin left move the h1 element away from the left side of the screen, increase font of the h1 text, and aligned the text to the right to move closer to boarder right.
+
+Padding right creates space between the board and the text.*/
+
+.about-me h1 {
+    border-right: solid black;
+    margin-left: 10%;
+    font-size: 30px;
+    text-align: right;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    padding-right: 14px;
+}
+
+/* P tag margin top is increas to better position text next to the h1 black boarder. padding left and right ensure p tag text is position in the middle of the block. 
+
+Line height create space between the lines of the text.*/
+
+.about-me p{
+    margin-top: 2em;
+    padding-left: 20px;
+    padding-right: 10px;
+    line-height: 1.5;
+}
