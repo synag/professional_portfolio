@@ -6,20 +6,21 @@
     box-sizing: border-box;
 }
 
-/* Body is dark green to better see the area */
+/* background color for the body is light brown */
 body{
     background-color: var(--backgroundColor);
 }
 
-/* Header color turns the top nav background to red */
+/* Header .................................................................................. */
+
+/* Header color gredient is green */
 header{
-    /* background-color: rgba(6, 54, 53, 0.288); */
     background: #649173; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #649173, #dbd5a4); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #649173, #dbd5a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #649173, #dbd5a4); 
+  background: linear-gradient(to right, #649173, #dbd5a4);  
 }
 
-/* This styles the H1 with my name  */
+/* This styles the H1 "Carl Benbow"  */
 header h1{
 line-height: 4em;
 font-size: 30px; 
@@ -40,21 +41,14 @@ header div{
     justify-content: space-between
    
 }
-/* Styles the anchor tags and the background */
+/* Styles the anchor tags and the background as well adds padding */
 nav, a{
     padding: 2em;
     text-decoration: underline;
     color: rgb(4, 20, 4);
     font-size: 20px;
     font-weight: bold;
-    
-}
 
-/* Formats the header image */
-.box-relative img{
-    height: 500px;
-    width: 100%;
-    
 }
 
 /* This class is centered around a div above the image and is the relative position to add text above the image */
@@ -62,7 +56,13 @@ nav, a{
     position: relative;
 }
 
-/* block css is absolute position of the h2 and goal is to position text at the center of the image.  */
+/* Formats the header image */
+.box-relative img{
+    height: 500px;
+    width: 100%;
+}  
+
+/* block the css is absolute position of the h2 and goal is to position text at the center of the image.  */
 header h2{
 position: absolute;
 top:40%;
@@ -76,18 +76,14 @@ font-size: 4em;
 }
 
 
-/* Thinking of have words come in and out of the image 
-Add work ART for my Name Use Font Family*/
-
-/* Main creates the container to format the child elements within the contatiner. Margins left and right helps contrain the width of the children elements*/
+/* Main .................................................................................. *
+/* Main creates the container to format the child elements within the contatiner */
 main{
     margin-left: 10%;
     margin-right: 10%;
 }
-
-/* About class is the flext element that allows the child h1 and p to justify center position each element side by side. 
-
-Padding bottom expand the.about-me container*/
+/* 
+/* About Me class is the flex element that allows the child h2 (about me) and p tag to position each element side by side.  */
 .about-me{
     background-color: var(--backgroundColor);
     display: flex;
@@ -96,11 +92,8 @@ Padding bottom expand the.about-me container*/
 
 }
 
-/* H1 has a boarder to the right to seperate the p tag text. Margin left move the h1 element away from the left side of the screen, increase font of the h1 text, and aligned the text to the right to move closer to boarder right.
-
-Padding right creates space between the board and the text.*/
-
-.about-me h1 {
+/* styles the h2 and adds boarder to the right with padding to seperate the p tag text.  */
+.about-me h2 {
     border-right: solid black;
     margin-left: 10%;
     font-size: 30px;
@@ -110,16 +103,17 @@ Padding right creates space between the board and the text.*/
     padding-right: 14px;
 }
 
-/* P tag margin top is increas to better position text next to the h1 black boarder. padding left and right ensure p tag text is position in the middle of the block. 
-
-Line height create space between the lines of the text.*/
+/* styles the P tag, adds margin top to better position text next to the h2 black boarder.Line height creates space between the lines of the text.*/
 
 .about-me p{
     margin-top: 2em;
     padding-left: 20px;
     padding-right: 10px;
     line-height: 1.5;
+    margin-bottom: 2em;
 }
+
+/* Article 1 on the main............................................................. */
 
 .flex-container-2{
     display: flex;
@@ -129,19 +123,19 @@ Line height create space between the lines of the text.*/
     padding-bottom: 5em;
 }
 
-.flex-container-2 h1 {
-
+/* styles the "work" text h2 */
+ #work{
     border-right: solid black;
     margin-left: 10%;
     font-size: 30px;
     text-align: right;
-    /* padding-bottom: 1em; */
-    /* margin-top: 1em; */
     padding-right: 25px;
     margin-right: 20px;
     padding-top: 30px;
 }
 
+/* Article 2 on the main............................................................... */
+/* styles all the boxes on main and is the relative position to the box-labels */
 .box-1,
 .box-2,
 .box-3,
@@ -155,6 +149,11 @@ Line height create space between the lines of the text.*/
     position: relative;
 } 
 
+.work-links{
+    padding: 0%;
+}
+
+/* styles all of the label (words) on the boxes and positions it absolute */
 .box-label-1,
 .box-label-2,
 .box-label-3,
@@ -164,17 +163,16 @@ position: absolute;
 top: 27%;
 bottom: 50%;
 right:20%;
-left: 32%;
+left: 9%;
 color: white;
 font-weight: bold;
 font-size:3em;
-
 }
 
+/* styles each box image so that the image apears darker, has borders and box-shadow.  */
   .box-1 img,
   .box-2 img,
   .box-3 img,
-  .box-4 img,
   .box-5 img,
   .box-6 img{
     opacity: 0.5;
@@ -182,16 +180,16 @@ font-size:3em;
     border-style: double;
     border-width:10px;
     box-shadow: 10px 5px 5px rgb(32, 30, 30); 
-    
  }
 
-
+/* enables box-1 image to increases when the mouse hovers */
  .box-1 img:hover{
 height: 300px;
 width: 1200px;
 opacity: 2;
  }
- 
+
+ /* styles and positions the text above box-1 */
  .box-1 h3{
   position: absolute;
   Top: -17%;
@@ -206,7 +204,7 @@ opacity: 2;
   color: white;
  }
 
-
+/* enables the boxes to increase in size when the mouse hovers */
  .box-2 img:hover,  
  .box-3 img:hover,
  .box-5 img:hover,
@@ -216,11 +214,12 @@ opacity: 2;
     opacity: 2;
      }
 
+
+/* styles and positions the text above box-2-6 */
  .box-2 h3,
  .box-3 h3,
  .box-5 h3,
- .box-6 h3 
- {
+ .box-6 h3  {
     position: absolute;
     Top: -35%;
     left: 5%;
@@ -233,36 +232,27 @@ opacity: 2;
     background-color: #e98074;
     color: white;
    }
-   .box-5 h3{
-       width: 12em;
-   }
 
+/* Flex element to organize boxes 2,3,5,6 */
 .flex-container-3{
     display: flex;
-    /* justify-content:space-between; */
     justify-content: space-evenly;
     width: 60em;
 }
 
-
+/* provides customer styling to the boxes-2,3,5,6 */
 .box-2,
 .box-3,
 .box-5,
 .box-6{
     height: 10em;
     background-color: var(--backgroundColor);
-    /* padding: 20px; */
     width: 30em;
     margin: 9px;
-   
-}
-/* footer{
-    background-color: blanchedalmond;
-    height: 20em;
-    margin-left: 10%;
-    margin-right: 10%;
-} */
+} 
 
+/* Footer .................................................................................. */
+/* creates a flex element and allows the h1 to be side by with the anchor tag */
 .footer-container{
     display: flex;
     justify-content: space-around;
@@ -271,6 +261,8 @@ opacity: 2;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/* styles the h1 of the footer  */
 footer h1{
    border-right: solid black;
    margin-left: 10%;
@@ -281,8 +273,46 @@ footer h1{
    padding-top: 10px;
 } 
 
-@media screen and (max-width:760px){
-body,header,nav, main, section, footer, .footer-container, .flex-container-2,.flex-container-3{
+
+/* 
+Media Responsive section...................................... */
+/* Extra small devices (phones, 600px and down) */
+ @media screen and (max-width:600px){
+ main, article, footer, .footer-container, .flex-container-2,.flex-container-3{
     flex-direction:column;
+ }
+
+ p{
+   width:46%;
+ }
+
+main{
+    width:197%;
 }
+.box-1{
+    width:187%;
 }
+
+.row-1{
+    width: 0%;
+    }
+.row-2{
+    width: 0%;
+} 
+
+.box-1 img,
+.box-2 img,
+.box-3 img,
+.box-5 img,
+.box-6 img {
+width: 131%;
+}
+
+.box-label-2,
+.box-label-3,
+.box-label-5,
+.box-label-6{
+    right:18%;
+} 
+}
+
