@@ -168,6 +168,10 @@ color: white;
 font-weight: bold;
 font-size:3em;
 }
+/* react box-label needed a bigger width so that the words fit withing the box */
+#h3-react-box-label-size-exception{
+    width: 65%;
+}
 
 /* styles each box image so that the image apears darker, has borders and box-shadow.  */
   .box-1 img,
